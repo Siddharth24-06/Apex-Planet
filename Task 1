@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top 3 Places to Visit in India</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;  /* Soft light background */
+      color: #333;
+      margin: 30px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+    .place {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: box-shadow 0.3s;
+    }
+    .place:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    .place img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .place h2 {
+      margin-top: 0;
+      color: #34495e;
+    }
+    .place p {
+      margin-bottom: 15px;
+    }
+    a.learn {
+      display: inline-block;
+      color: #2980b9;
+      background: #ecf5fc;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    a.learn:hover {
+      background: #d0eafc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Top 3 Places to Visit in India</h1>
+
+  <div class="place">
+    <h2>👑 Taj Mahal, Agra</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Taj Mahal">
+    <p>The Taj Mahal, a UNESCO World Heritage Site, is the iconic white marble mausoleum built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.</p>
+    <a class="learn" href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank">Learn more</a>
+  </div>
+
+  <div class="place">
+    <h2>🌄 Jaipur, Rajasthan</h2>
+    <img src="https://ecoplore.com/wp-content/uploads/2021/06/Jaipur-1.jpg">
+    <p>Explore the majestic forts and palaces of the 'Pink City'—Amber Fort, Hawa Mahal, City Palace—and immerse yourself in vibrant Rajasthani culture.</p>
+    <a class="learn" href="https://en.wikipedia.org/wiki/Jaipur" target="_blank">Learn more</a>
+  </div>
+
+  <div class="place">
+    <h2>🌿 Kerala Backwaters</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Houseboats_at_Kerala_Backwaters.jpg">
+    <p>Drift through serene canals and lagoons of Kerala on a houseboat—enjoy lush greenery, peaceful villages, and a tranquil atmosphere.</p>
+    <a class="learn" href="https://en.wikipedia.org/wiki/Kerala_backwaters" target="_blank">Learn more</a>
+  </div>
+</body>
+</html>
