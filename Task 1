@@ -45,18 +45,18 @@
     .place p {
       margin-bottom: 15px;
     }
-    a.learn {
-      display: inline-block;
-      color: #2980b9;
-      background: #ecf5fc;
+    button.learn {
+      background: #2980b9;
+      color: white;
+      border: none;
       padding: 8px 16px;
       border-radius: 4px;
-      text-decoration: none;
       font-weight: 600;
+      cursor: pointer;
       transition: background 0.3s;
     }
-    a.learn:hover {
-      background: #d0eafc;
+    button.learn:hover {
+      background: #1c5d8b;
     }
   </style>
 </head>
@@ -67,21 +67,22 @@
     <h2>👑 Taj Mahal, Agra</h2>
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Taj Mahal">
     <p>The Taj Mahal, a UNESCO World Heritage Site, is the iconic white marble mausoleum built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.</p>
-    <a class="learn" href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank">Learn more</a>
+    <button class="learn" onclick="alert('The Taj Mahal is a white marble mausoleum in Agra, built by Emperor Shah Jahan.')">Learn more</button>
   </div>
 
   <div class="place">
     <h2>🌄 Jaipur, Rajasthan</h2>
-    <img src="https://ecoplore.com/wp-content/uploads/2021/06/Jaipur-1.jpg">
+    <img src="https://ecoplore.com/wp-content/uploads/2021/06/Jaipur-1.jpg" alt="Jaipur">
     <p>Explore the majestic forts and palaces of the 'Pink City'—Amber Fort, Hawa Mahal, City Palace—and immerse yourself in vibrant Rajasthani culture.</p>
-    <a class="learn" href="https://en.wikipedia.org/wiki/Jaipur" target="_blank">Learn more</a>
+    <button class="learn" onclick="alert('Jaipur is known as the Pink City and famous for its forts, palaces and rich culture.')">Learn more</button>
   </div>
 
   <div class="place">
     <h2>🌿 Kerala Backwaters</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Houseboats_at_Kerala_Backwaters.jpg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Houseboats_at_Kerala_Backwaters.jpg" alt="Kerala Backwaters">
     <p>Drift through serene canals and lagoons of Kerala on a houseboat—enjoy lush greenery, peaceful villages, and a tranquil atmosphere.</p>
-    <a class="learn" href="https://en.wikipedia.org/wiki/Kerala_backwaters" target="_blank">Learn more</a>
+    <button class="learn" onclick="alert('Kerala Backwaters are famous for tranquil canals, houseboats, and scenic views.')">Learn more</button>
   </div>
 </body>
 </html>
+
