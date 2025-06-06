@@ -6,7 +6,7 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f9fafb;  /* Soft light background */
+      background-color: #f9fafb;
       color: #333;
       margin: 30px;
       line-height: 1.6;
@@ -34,8 +34,7 @@
       border-radius: 6px;
       margin-bottom: 15px;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
     .place h2 {
@@ -57,6 +56,21 @@
     }
     button.learn:hover {
       background: #1c5d8b;
+    }
+    button.more {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 40px auto;
+      transition: background 0.3s;
+    }
+    button.more:hover {
+      background: #1e8449;
     }
   </style>
 </head>
@@ -83,6 +97,12 @@
     <p>Drift through serene canals and lagoons of Kerala on a houseboat—enjoy lush greenery, peaceful villages, and a tranquil atmosphere.</p>
     <button class="learn" onclick="alert('Kerala Backwaters are famous for tranquil canals, houseboats, and scenic views.')">Learn more</button>
   </div>
+
+  <!-- More Places Button -->
+  <button class="more" onclick="window.open('https://en.wikipedia.org/wiki/Category:Lists_of_tourist_attractions_in_India', '_blank')">
+    More Places to Visit in India
+  </button>
 </body>
 </html>
+
 
