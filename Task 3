@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Top 3 Places to Visit in India</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #2e8b57;
+      padding: 10px 20px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #246b45;
+    }
+
+    @media (max-width: 600px) {
+      .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .place {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .place img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .place button {
+      background-color: #2980b9;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .place button:hover {
+      background-color: #1c5d8b;
+    }
+
+    button.more {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 30px auto;
+    }
+
+    button.more:hover {
+      background: #1e8449;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form input, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+    }
+
+    form button:hover {
+      background-color: #246b45;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    #todo {
+      max-width: 500px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    #todo input, #todo button {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #todo input {
+      width: 70%;
+    }
+
+    #todo button {
+      width: 25%;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+    }
+
+    #todo button:hover {
+      background-color: #246b45;
+    }
+
+    ul#taskList li {
+      list-style: none;
+      background-color: #e0f8e0;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+    }
+
+    @media(max-width: 600px) {
+      .button-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Top 3 Places to Visit in India 🇮🇳</h1>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#places">Places</a></li>
+      <li><a href="#todo">To-Do List</a></li>
+      <li><a href="#contactForm">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <section class="container" id="places">
+    <div class="place" id="taj-mahal">
+      <h2>👑 Taj Mahal, Agra</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Taj Mahal">
+      <p>White marble mausoleum built by Emperor Shah Jahan in memory of Mumtaz Mahal.</p>
+      <button onclick="alert('The Taj Mahal is a white marble mausoleum in Agra, built by Emperor Shah Jahan.')">Learn more</button>
+    </div>
+
+    <div class="place" id="jaipur">
+      <h2>🌄 Jaipur, Rajasthan</h2>
+      <img src="https://ecoplore.com/wp-content/uploads/2021/06/Jaipur-1.jpg" alt="Jaipur">
+      <p>Explore Amber Fort, Hawa Mahal, and vibrant Rajasthani culture in the Pink City.</p>
+      <button onclick="alert('Jaipur is known as the Pink City and famous for forts, palaces and culture.')">Learn more</button>
+    </div>
+
+    <div class="place" id="kerala">
+      <h2>🌿 Kerala Backwaters</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Houseboats_at_Kerala_Backwaters.jpg" alt="Kerala">
+      <p>Enjoy houseboat rides, lush greenery and peaceful lagoons of Kerala.</p>
+      <button onclick="alert('Kerala Backwaters are famous for tranquil canals, houseboats, and scenic views.')">Learn more</button>
+    </div>
+  </section>
+
+  <button class="more" onclick="window.open('https://en.wikipedia.org/wiki/Category:Lists_of_tourist_attractions_in_India')">More Places to Visit</button>
+
+  <!-- Image Carousel -->
+  <section style="max-width: 800px; margin: 50px auto; text-align: center;">
+    <h2>🖼️ Explore More Places</h2>
+    <div id="carousel" style="position: relative;">
+      <img id="carouselImage" src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Carousel Image" style="width: 100%; border-radius: 10px; max-height: 400px; object-fit: cover;">
+      <div style="margin-top: 10px;">
+        <button onclick="changeImage(-1)">⬅️ Prev</button>
+        <button onclick="changeImage(1)">Next ➡️</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="todo">
+    <h2>📝 Trip To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task..." />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <form id="contactForm">
+    <h2>📬 Contact Us</h2>
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <div class="button-group">
+      <button type="submit" name="action" value="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="submit" name="action" value="subscribe">Subscribe</button>
+    </div>
+  </form>
+
+  <!-- Joke API Section -->
+  <section style="max-width: 600px; margin: 50px auto; text-align: center;">
+    <h2>😂 Random Travel Joke</h2>
+    <p id="jokeText">Click the button below to load a joke!</p>
+    <button onclick="fetchJoke()" style="padding: 10px 20px; border: none; background: #2e8b57; color: white; border-radius: 5px;">Get Joke</button>
+  </section>
+
+  <footer>
+    © 2025 Made with 💚 using HTML, CSS & JavaScript
+  </footer>
+
+  <script>
+    // Form logic
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const action = e.submitter.value;
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      if (!name || !email) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      if (!pattern.test(email)) {
+        alert("Enter a valid email address.");
+        return;
+      }
+
+      if (action === "submit") {
+        alert("Thank you! Your form has been submitted.");
+      } else if (action === "subscribe") {
+        alert("You’ve been subscribed to our travel updates!");
+      }
+    });
+
+    // To-do list
+    function addTask() {
+      const taskInput = document.getElementById("taskInput");
+      const task = taskInput.value.trim();
+      if (task === "") return;
+
+      const li = document.createElement("li");
+      li.textContent = task;
+      li.onclick = () => li.remove();
+      document.getElementById("taskList").appendChild(li);
+      taskInput.value = "";
+    }
+
+    // Image Carousel
+    const images = [
+      "https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg",
+      "https://ecoplore.com/wp-content/uploads/2021/06/Jaipur-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/27/Houseboats_at_Kerala_Backwaters.jpg"
+    ];
+    let currentIndex = 0;
+
+    function changeImage(direction) {
+      currentIndex = (currentIndex + direction + images.length) % images.length;
+      document.getElementById("carouselImage").src = images[currentIndex];
+    }
+
+    // Fetch from Joke API
+    async function fetchJoke() {
+      const jokeText = document.getElementById("jokeText");
+      try {
+        const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+        const data = await response.json();
+        jokeText.innerText = `${data.setup} 🤔 ${data.punchline}`;
+      } catch (error) {
+        jokeText.innerText = "Oops! Couldn't fetch a joke right now.";
+      }
+    }
+  </script>
+
+</body>
+</html>
