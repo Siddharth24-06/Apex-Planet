@@ -11,68 +11,70 @@
   <!-- Devicon CDN for skill icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <style>
+    /* Custom CSS to set Inter as the default font, overriding Tailwind's font-sans if needed */
     body {
       font-family: 'Inter', sans-serif;
     }
+    /* Smooth scroll for navigation */
     html {
       scroll-behavior: smooth;
     }
-
-    /* Changed hero background to dual violet gradient */
+    /* Custom styles for professional light aesthetic */
+    /* Changed the hero background to dual shades of blue with more contrast */
     .hero-bg-gradient {
-      background: linear-gradient(135deg, #7F00FF, #E100FF);
+        background: linear-gradient(to right, #7DD3FC, #1E40AF); /* Light Sky Blue to Darker Blue */
     }
 
+    /* Modal specific styles */
     .modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.3s ease;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s ease;
     }
 
     .modal-overlay.open {
-      visibility: visible;
-      opacity: 1;
+        visibility: visible;
+        opacity: 1;
     }
 
     .modal-content {
-      background-color: white;
-      padding: 2.5rem;
-      border-radius: 1.5rem;
-      max-width: 90%;
-      max-height: 90%;
-      overflow-y: auto;
-      position: relative;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-      transition: transform 0.3s ease;
-      transform: scale(0.95);
+        background-color: white;
+        padding: 2.5rem; /* Equivalent to p-10 */
+        border-radius: 1.5rem; /* Equivalent to rounded-3xl */
+        max-width: 90%;
+        max-height: 90%;
+        overflow-y: auto;
+        position: relative;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Equivalent to shadow-xl */
+        transition: transform 0.3s ease;
+        transform: scale(0.95);
     }
 
     .modal-overlay.open .modal-content {
-      transform: scale(1);
+        transform: scale(1);
     }
 
     .modal-close {
-      position: absolute;
-      top: 1rem;
-      right: 1.25rem;
-      font-size: 2rem;
-      cursor: pointer;
-      color: #4B5563;
+        position: absolute;
+        top: 1rem;
+        right: 1.25rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #4B5563;
     }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <!-- Navigation -->
   <nav class="bg-white shadow-md py-4 sticky top-0 z-50 flex justify-center gap-6 flex-wrap rounded-b-xl">
     <a href="#hero" class="text-indigo-600 hover:bg-indigo-500 hover:text-white font-semibold px-4 py-2 rounded-lg transition duration-300">Home</a>
     <a href="#about" class="text-indigo-600 hover:bg-indigo-500 hover:text-white font-semibold px-4 py-2 rounded-lg transition duration-300">About</a>
@@ -82,9 +84,8 @@
     <a href="#contact" class="text-indigo-600 hover:bg-indigo-500 hover:text-white font-semibold px-4 py-2 rounded-lg transition duration-300">Contact</a>
   </nav>
 
-  <!-- Hero Section -->
   <header id="hero" class="hero-bg-gradient text-white text-center py-16 md:py-24 rounded-b-xl shadow-lg">
-    <img src="https://media.licdn.com/dms/image/v2/D4E03AQGZdMRLzGETyg/profile-displayphoto-scale_400_400/B4EZeOUSiiHsAg-/0/1750439373705?e=1755734400&v=beta&t=OBcI3EcIsDal_q0KtTpoSdayiioVrJU1TcOeZjMX2GE" alt="Tatineni Siddharth Choudary" class="w-40 h-40 rounded-full object-cover mx-auto mb-4 border-4 border-white shadow-lg">
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQGZdMRLzGETyg/profile-displayphoto-scale_400_400/B4EZeOUSiiHsAg-/0/1750439373705?e=1755734400&v=beta&t=OBcI3EcIsDal_q0KtTpoSdayiioVrJU1TcOeZjMX2GE" alt="Tatineni Siddharth Choudary's Photo" class="w-40 h-40 rounded-full object-cover mx-auto mb-4 border-4 border-white shadow-lg" loading="lazy" />
     <h1 class="text-4xl md:text-5xl font-bold leading-tight">Tatineni Siddharth Choudary</h1>
     <p class="text-xl md:text-2xl font-light opacity-90 mt-2">Web Developer | JavaScript Enthusiast | Lifelong Learner</p>
   </header>
